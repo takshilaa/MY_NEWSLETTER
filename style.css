@@ -6,9 +6,10 @@ body {
     font-style: normal;
 }
 
+/* HEADER section */
 #header {
     color: white;
-    padding: 20px 0;
+    padding: 0px 0;
 }
 
 .header.container {
@@ -63,10 +64,6 @@ body {
     margin: 0 10px; /* Space around the separator */
 }
 
-/* Remove the lines in the second nav-bar */
-#line2 .nav-list ul li::after {
-    display: none;
-}
 
 /* Styling for the links and images */
 .nav-list ul li a {
@@ -79,15 +76,7 @@ body {
     font-size: 14px;
 }
 
-#line2 .nav-list ul li a {
-    font-size: small;
-    font-weight: bold;
-    white-space: nowrap;
-}
 
-#line2 .nav-list ul li.t {
-    margin-left: 40%;
-}
 .nav-list ul li a:hover {
     color: #f0a500;
 }
@@ -115,7 +104,26 @@ body {
     vertical-align: middle;
     cursor: pointer;
 }
+/* HEADER SECTION ENDS */
 
+/* line2 section begins */
+/* Remove the lines in the second nav-bar */
+#line2 .nav-list ul li::after {
+    display: none;
+}
+
+#line2 .nav-list ul li a {
+    font-size: small;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#line2 .nav-list ul li.t {
+    margin-left: 30%;
+    padding-right: 15px;
+    padding-left: 0px;
+    
+}
 /* Grey, blurry line after line2 */
 #line2 .nav-list {
     margin-bottom: 20px; /* Space below line2 before the grey line */
@@ -130,3 +138,25 @@ body {
     filter: blur(); /* Blurry effect */
     margin-top: 10px;
 }
+/* line2 section ends */
+
+/* advertisement section begins*/
+#ad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(232, 229, 229, 0.5); /* Slightly transparent grey background */
+    backdrop-filter: blur(5px); /* Blurring effect */
+    padding: 20px;
+}
+#ad img {
+    max-width: 50%; /* Ensure the image scales down if needed */
+    height: auto;
+}
+/* .ad-text {
+    font-size: 14px;
+    font-weight: bold;
+    transform: rotate(-90deg);
+    margin: 0 20px;
+} */
+/* advertisement section ends*/
