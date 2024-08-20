@@ -301,9 +301,14 @@ footer {
     cursor: pointer;
     margin-bottom: 22px;
     font-weight: bold;
+    color: #000;
     
 }
-
+.newsletter-btn:hover{
+    background-color: #00ADEF; 
+    color: #fff; 
+    
+}
 .social-media {
     margin-top: 10px;
 }
