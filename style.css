@@ -1,3 +1,5 @@
+/* I will be adding comments for my reference and for dividing the sections */
+/* Base Styles */
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -6,16 +8,16 @@ body {
     font-style: normal;
 }
 
-/* HEADER section */
+/* Header Section */
 #header {
     color: white;
-    padding: 0px 0;
+    padding: 0;
 }
 
 .header.container {
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 0px;
 }
 
 .nav-bar {
@@ -24,21 +26,13 @@ body {
     align-items: center;
 }
 
-.brand {
-    display: flex;
-    align-items: center;
-}
-
+/* Brand Logo */
 .brand img {
-    max-height: 99px; /* Adjust the height of the logo */
-    margin-right: 20px; /* Space between the logo and the rest of the navbar */
+    max-height: 99px;
+    margin-right: 20px;
 }
 
-.nav-list {
-    display: flex;
-    align-items: center;
-}
-
+/* Navigation List */
 .nav-list ul {
     list-style: none;
     margin: 0;
@@ -48,39 +42,35 @@ body {
 }
 
 .nav-list ul li {
-    display: flex;
-    align-items: center;
     position: relative;
 }
 
-/* Keep the lines in the first nav-bar */
+/* Separator Lines in Header */
 #header .nav-list ul li:not(:last-child)::after {
     content: '';
     display: inline-block;
     width: 1px;
-    height: 24px; /* Height of the line, adjust as needed */
-    background-color: rgba(72, 72, 72, 0.5); /* Grey color */
-    filter: blur(); /* Blurry effect */
-    margin: 0 10px; /* Space around the separator */
+    height: 24px;
+    background-color: rgba(72, 72, 72, 0.5);
+    filter: blur(1px);
+    margin: 0 10px;
 }
 
-
-/* Styling for the links and images */
+/* Navigation Links */
 .nav-list ul li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: 100;
-    position: relative;
     padding: 15px;
     transition: color 0.3s ease;
     font-size: 14px;
 }
 
-
 .nav-list ul li a:hover {
     color: #f0a500;
 }
 
+/* Underline Effect on Hover */
 .nav-list ul li a::after {
     content: attr(data-after);
     position: absolute;
@@ -99,15 +89,14 @@ body {
     transform: scaleX(1);
 }
 
+/* Icons in Navigation */
 .nav-list ul li img {
     max-width: 20px;
     vertical-align: middle;
     cursor: pointer;
 }
-/* HEADER SECTION ENDS */
 
-/* line2 section begins */
-/* Remove the lines in the second nav-bar */
+/* Line 2 Section */
 #line2 .nav-list ul li::after {
     display: none;
 }
@@ -121,12 +110,10 @@ body {
 #line2 .nav-list ul li.t {
     margin-left: 30%;
     padding-right: 15px;
-    padding-left: 0px;
-    
 }
-/* Grey, blurry line after line2 */
+
 #line2 .nav-list {
-    margin-bottom: 20px; /* Space below line2 before the grey line */
+    margin-bottom: 20px;
 }
 
 #line2::after {
@@ -134,29 +121,242 @@ body {
     display: block;
     width: 100%;
     height: 1px;
-    background-color: rgba(63, 62, 62, 0.5); /* Grey colour */
-    filter: blur(); /* Blurry effect */
+    background-color: rgba(63, 62, 62, 0.5);
+    filter: blur(1px);
     margin-top: 10px;
 }
-/* line2 section ends */
 
-/* advertisement section begins*/
-#ad{
+/* Advertisement Section */
+#ad {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(232, 229, 229, 0.5); /* Slightly transparent grey background */
-    backdrop-filter: blur(5px); /* Blurring effect */
+    background-color: rgba(232, 229, 229, 0.5);
+    backdrop-filter: blur(5px);
     padding: 20px;
 }
+
 #ad img {
-    max-width: 50%; /* Ensure the image scales down if needed */
+    max-width: 50%;
     height: auto;
 }
-/* .ad-text {
+
+/* 
+Section 1 */
+
+/* General Styles */
+#news-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.scoop, .top-story, .exclusive-news {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.dummy-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+}
+
+.label {
+    background-color: #f00;
+    color: #fff;
+    padding: 2px 8px;
     font-size: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+/* 
+the scoop section */
+
+.scoop {
+    width: 20%;
+}
+
+.scoop h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.scoop ul {
+    list-style: none;
+    padding: 0;
+}
+
+.scoop li {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.scoop p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.scoop span {
+    font-size: 12px;
+    color: #666;
+}
+
+
+
+
+.top-story {
+    width: 50%;
+}
+
+.top-story-content {
+    padding: 10px 0;
+}
+
+.top-story h2 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.top-story p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Right Section: Exclusive and More News */
+.exclusive-news {
+    width: 25%;
+}
+
+.exclusive {
+    background-color: #ff0;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.exclusive p {
+    font-size: 16px;
     font-weight: bold;
-    transform: rotate(-90deg);
-    margin: 0 20px;
-} */
-/* advertisement section ends*/
+    margin: 0 0 10px;
+}
+
+.exclusive span {
+    font-size: 12px;
+    color: #666;
+}
+
+.more-news .news-item {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.small-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.more-news p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.more-news span {
+    font-size: 12px;
+    color: #666;
+}
+
+/* footer starts*/
+footer {
+    background-color:rgba(232, 229, 229, 0.5);;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.footer-left {
+    flex: 1;
+  
+}
+
+
+.newsletter-btn {
+    display: inline-block;
+    border: 3px solid #000000;
+    padding: 12px 94px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 22px;
+    font-weight: bold;
+    
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons a img {
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle;
+    padding: 8px;
+}
+
+.footer-middle {
+    margin: 0 auto; /* Centers the middle footer */
+    padding-top: 12px; 
+    margin-top: 75px;
+    font-weight: bold;
+}
+
+.footer-right {
+    margin-top: 87px;
+    margin-right: 20px; /* Adds some spacing between the right and rightmost sections */
+}
+
+.footer-rightmost {
+    margin-top: 87px;
+}
+
+.footer-middle ul, .footer-right ul, .footer-rightmost ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li, .footer-right ul li, .footer-rightmost ul li {
+    margin-bottom: 17px;
+}
+
+.footer-middle ul li a, .footer-right ul li a, .footer-rightmost ul li a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+    padding-right: 112px;
+}
+
+.footer-middle ul li a:hover, .footer-right ul li a:hover, .footer-rightmost ul li a:hover {
+    color: #00ADEF;
+}
