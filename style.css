@@ -154,9 +154,8 @@ body {
     /* Clearfix to ensure no overlap */
 }
 
-.scoop h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.scoop img {
+    width:92%;
 }
 
 .scoop ul {
@@ -392,12 +391,12 @@ Section 1 */
 }
 
 .olympic-item {
-    background-color: #222;
+    background-color: #000000;
     padding: 10px;
     color: #fff;
     display: flex;
     flex-direction: column; 
-    align-items: center; 
+    align-items: left; 
 }
 
 .olympic-item img {
@@ -409,8 +408,46 @@ Section 1 */
 .olympic-item p {
     font-size: 14px; 
     margin: 0;
-    text-align: center; 
+    text-align: left; 
+    font-weight: bold;
 }
+
+.olympic-item span{
+    font-size: 14px; 
+    color: #666;
+    
+    
+}
+
+/* Section 3 css  */
+#startracks {
+    display: flex; /* Align child elements in a row */
+    align-items: center; /* Vertically center align the images */
+    gap: 20px; /* Optional: Adds space between the images */
+}
+
+.startrackimg {
+    flex: 1; /* Allows the .startrackimg container to take up more space */
+    display: flex; /* Center the image inside its container */
+    justify-content: center; /* Center the image horizontally */
+}
+
+.startrackimg img {
+    max-width: 67%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.ad2 {
+    flex: 0 0 auto; /* Prevents this container from growing or shrinking */
+    display: flex; /* Center the image inside its container */
+    justify-content: center; /* Center the image horizontally */
+}
+
+.ad2 img {
+    max-width: 237px; /* Set a specific width for the ad image */
+    height: auto; /* Maintain aspect ratio */
+}
+
 
 
 
