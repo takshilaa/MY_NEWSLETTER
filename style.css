@@ -7,7 +7,7 @@ body {
     font-weight: 300;
     font-style: normal;
 }
-
+/* ====================================================================== */
 /* Header Section */
 #header {
     color: white;
@@ -125,7 +125,7 @@ body {
     filter: blur(1px);
     margin-top: 10px;
 }
-
+/* ============================================================================================ */
 /* Advertisement Section */
 #ad {
     display: flex;
@@ -140,6 +140,7 @@ body {
     max-width: 50%;
     height: auto;
 }
+
 
 /* 
 Section 1 */
@@ -270,7 +271,7 @@ the scoop section */
     font-size: 12px;
     color: #666;
 }
-
+/* ======================================================================================== */
 /* footer starts*/
 footer {
     background-color:rgba(232, 229, 229, 0.5);;
@@ -283,16 +284,16 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    
 }
-
-
 
 .footer-left {
     flex: 1;
   
 }
 
-
+/* Newsletter button  */
 .newsletter-btn {
     display: inline-block;
     border: 3px solid #000000;
@@ -309,6 +310,7 @@ footer {
     color: #fff; 
     
 }
+/* SOcial media logos */
 .social-media {
     margin-top: 10px;
 }
@@ -330,20 +332,21 @@ footer {
     padding: 8px;
 }
 
+/* Footer middle  */
 .footer-middle {
-    margin: 0 auto; /* Centers the middle footer */
     padding-top: 12px; 
     margin-top: 75px;
     font-weight: bold;
+    margin-right: 80px;
 }
 
 .footer-right {
     margin-top: 87px;
-    margin-right: 20px; /* Adds some spacing between the right and rightmost sections */
 }
 
 .footer-rightmost {
     margin-top: 87px;
+    margin-left: -6%;
 }
 
 .footer-middle ul, .footer-right ul, .footer-rightmost ul {
@@ -365,3 +368,5 @@ footer {
 .footer-middle ul li a:hover, .footer-right ul li a:hover, .footer-rightmost ul li a:hover {
     color: #00ADEF;
 }
+/* Footer ends  */
+/* ============================================================================================= */
