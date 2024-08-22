@@ -167,7 +167,16 @@ body {
 .scoop li {
     display: flex;
     margin-bottom: 15px;
+    padding-bottom: 15px; /* Add padding to create space for the line */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Thin line */
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1); /* Blurry effect */
 }
+
+.scoop li:last-child {
+    border-bottom: none; /* Remove the line from the last item */
+    box-shadow: none; /* Remove the blur effect from the last item */
+}
+
 
 .scoop p {
     font-size: 14px;
@@ -184,6 +193,10 @@ body {
     display: table;
     clear: both;
 }
+.custom-space {
+    height: 345px; /* Adjust this value to control the amount of space */
+}
+
 
 
 /* 
@@ -281,7 +294,9 @@ Section 1 */
     margin-right: 15px; 
     padding: 20px;
     max-width: 300px;
+    
 }
+
 
 .news-item:last-child, .news-item2:last-child {
     margin-right: 0;
@@ -421,9 +436,10 @@ Section 1 */
 
 /* Section 3 css  */
 #startracks {
-    display: flex; /* Align child elements in a row */
+    display: flex; 
     align-items: center; /* Vertically center align the images */
     gap: 20px; /* Optional: Adds space between the images */
+    margin-bottom: 50px;
 }
 
 .startrackimg {
@@ -447,6 +463,270 @@ Section 1 */
     max-width: 237px; /* Set a specific width for the ad image */
     height: auto; /* Maintain aspect ratio */
 }
+/* Section 3 css ends */
+
+/* section 4  */
+
+#ad3 {
+    display: flex; /* Center the image inside the ad3 container */
+    justify-content: center; /* Center the image horizontally */
+    margin-bottom: 83px;
+}
+
+#ad3 img {
+    max-width: 78%; /* Ensure the ad3 image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* section 4  ends */
+
+/* section 5  */
+
+#feature-section {
+    display: flex;
+    align-items: center;
+    background-color: #00AEEF;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-top: 10px solid #fff;
+}
+
+.feature-text {
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    flex: 1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-text h2 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+}
+
+.feature-text p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.feature-text span {
+    color: #00AEEF;
+}
+
+.feature-image {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-image img {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+    border: 10px solid #fff;
+}
+
+/* SECTION 6 CSS  */
+#celebrity-news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between the columns */
+    margin-bottom: 70px; /* Space below the section */
+}
+
+.section-6 {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0); /* Optional: Adds shadow to the items */
+    border: 1px solid #ddd; /* Light border around each item */
+}
+
+.section-6 img {
+    width: 100%; /* Make the image fill the item width */
+    height: auto;
+    margin-bottom: 10px; /* Space between the image and title */
+}
+
+.section-6 h3 {
+    font-size: 18px;
+    margin: 0 0 10px 0; /* Space below the title */
+    font-weight: bold;
+}
+
+.section-6 p {
+    font-size: 14px;
+    margin: 0;
+    color: #666; /* Optional: Light gray color for the text */
+}
+
+.section-6 time {
+    font-size: 12px;
+    color: #999; /* Lighter gray color for the timestamp */
+    display: block;
+    margin-top: 10px; /* Space above the timestamp */
+}
+
+/* Section 7  */
+.section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    /* margin: -27px 0; */
+}
+.h h2{
+    font-size: 60px;
+        margin-bottom: 24px; 
+        border-bottom: 10px solid #00aeef;
+        display: inline-block;
+        line-height: 0.65; 
+        padding-bottom: 0;
+   
+}
+/* .section-wrapper h2 {
+    font-size: 60px;
+    margin-bottom: 24px; 
+    border-bottom: 10px solid #00aeef;
+    display: inline-block;
+    line-height: 0.65; 
+    padding-bottom: 0;
+} */
+
+.main-column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    clear: both;/*  // */
+}
+
+.main-column img {
+    width: 91%;
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+
+.main-column p {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.main-column .author {
+    color: #555;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.side-news {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    
+    /* margin-bottom: 20px; */
+}
+
+.side-news-item {
+    flex: 1;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.side-news-item:last-child {
+    margin-right: 0;
+}
+
+.side-news-item img {
+    width: 100%;
+    max-width: 235px;
+    margin-bottom: 10px;
+}
+
+.side-news-item p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+
+}
+ /* .highlighted-wrapper {
+    margin-top: 20px;
+}
+
+.side-news-item.highlighted {
+    padding: 10px;
+    background-color: yellow;
+    font-weight: bold;
+    text-align: left;
+    width: 30%; 
+    
+} */
+
+/* Section 08 css  */
+.section-8 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.column8 {
+    width: 30%;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.column8 img {
+    display: block;
+    margin: 0 auto;
+    width: 10%; 
+
+}
+.column8 h3 {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: yellow;
+    /* display: inline-block; */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.column8 .subtitle {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item8 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.item8 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.item8 p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Section 08 css end */
+
+
+
+
 
 
 
