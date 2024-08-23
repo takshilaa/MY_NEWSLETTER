@@ -839,6 +839,37 @@ Section 1 */
 }
 
 /* Section 11 css  */
+
+/* BUY-IT SECTION  */
+.buy-it-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.buy-it-container h2 {
+    margin: 0;
+    padding-right: 10px; /* Space between heading and line */
+    font-size: 37px; /* Adjust size as needed */
+    font-weight: 800;
+    width: 169px;
+    padding-left: 4px;
+}
+
+.buy-it-container .vertical-line {
+    width: 0.75px;
+    height: 55px; 
+    background-color: #383737; 
+    margin-right: 10px; /* Space between line and paragraph */
+}
+
+.buy-it-container p {
+    margin: 0;
+    font-size: 13px; 
+    color: #3c3a3aaf;
+    width: 492px;
+}
+/* BUY IT ENDS */
 #below-Buyit {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -859,7 +890,7 @@ Section 1 */
     margin-bottom: 10px;
 }
 
-.section-6 h3 {
+.section-11 h3 {
     font-size: 18px;
     margin: 0 0 10px 0;
     font-weight: bold;
@@ -879,6 +910,88 @@ Section 1 */
 }
 
 /* Section 11 css ends */
+
+/* section-12  */
+#section12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.section12-image {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+}
+
+.section12-image img {
+    width: 68%;
+    height: auto;
+}
+
+.section12-text {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 97px;
+    margin-top: 13px;
+    margin-bottom: 151px;
+}
+
+.section12-text h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.section12-text .author {
+    margin-top: 20px;
+    font-weight:80;
+}
+/* section-12  ends*/
+
+/* section-13  */
+/* TRUE CRIME  */
+.true-crime-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.true-crime-container h2 {
+    margin: 0;
+    padding-right: 10px; /* Space between heading and line */
+    font-size: 37px; /* Adjust size as needed */
+    font-weight: 800;
+    width: 278px;
+    padding-left: 4px;
+}
+
+.true-crime-container .vertical-line {
+    width: 0.75px;
+    height: 55px; 
+    background-color: #383737; 
+    margin-right: 10px; /* Space between line and paragraph */
+}
+
+.true-crime-container p {
+    margin: 0;
+    font-size: 13px; 
+    color: #3c3a3aaf;
+    width: 492px;
+}
+/* TRUE CRIME ENDS  */
+/* section-13 ends */
+
+
+
+
 
 
 
@@ -965,6 +1078,7 @@ footer {
 .footer-rightmost {
     margin-top: 87px;
     margin-left: -6%;
+    
 }
 
 .footer-middle ul, .footer-right ul, .footer-rightmost ul {
