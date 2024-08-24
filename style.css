@@ -137,6 +137,8 @@ body {
     background-color: rgba(232, 229, 229, 0.5);
     backdrop-filter: blur(5px);
     padding: 20px;
+    padding-top: 65px;
+    padding-bottom: 45px;
 }
 
 #ad img {
@@ -145,7 +147,6 @@ body {
 }
 /* ============================================================================== */
 
-/* Scoop Section */
 /* Scoop Section */
 #scoop-section {
     width: 20%; 
@@ -170,14 +171,14 @@ body {
 .scoop li {
     display: flex;
     margin-bottom: 15px;
-    padding-bottom: 15px; /* Add padding to create space for the line */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Thin line */
-    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1); /* Blurry effect */
+    padding-bottom: 15px; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1); 
 }
 
 .scoop li:last-child {
-    border-bottom: none; /* Remove the line from the last item */
-    box-shadow: none; /* Remove the blur effect from the last item */
+    border-bottom: none; 
+    box-shadow: none; 
 }
 
 
@@ -197,13 +198,11 @@ body {
     clear: both;
 }
 .custom-space {
-    height: 345px; /* Adjust this value to control the amount of space */
+    height: 345px; 
 }
+/* scoop section ends  */
 
-
-
-/* 
-Section 1 */
+/* Section 1 */
 
 /* General Styles */
 #news-section {
@@ -270,6 +269,7 @@ Section 1 */
     background-color: #ff0;
     padding: 23px;
     margin-bottom: 20px;
+    width: 319px;
 }
 
 .exclusive p {
@@ -296,31 +296,33 @@ Section 1 */
     text-align: left; 
     margin-right: 15px; 
     padding: 20px;
-    max-width: 300px;
-    
+    max-width: 300px;   
 }
-
 
 .news-item:last-child, .news-item2:last-child {
     margin-right: 0;
 }
 
 .small-img {
-    width: 100px; 
-    height: 80px; 
+    width: 133px;
+    height: 118px;
     margin-bottom: 15px; 
 }
 
 .news-item p, .news-item2 p {
     font-size: 16px; 
     margin: 0;
+    font-weight: bold;
 }
 
 .news-item span, .news-item2 span {
     font-size: 14px; 
     color: #666;
     text-align: left;
+    width: 140px;
+    padding-top: 12px;
 }
+/* section-1 ends  */
 
 /* section2  */
 
@@ -432,10 +434,9 @@ Section 1 */
 
 .olympic-item span{
     font-size: 14px; 
-    color: #666;
-    
-    
+    color: #666;  
 }
+/* section-2 ends */
 
 /* Section 3 css  */
 #startracks {
@@ -469,7 +470,6 @@ Section 1 */
 /* Section 3 css ends */
 
 /* section 4  */
-
 #ad3 {
     display: flex; 
     justify-content: center; 
@@ -480,11 +480,9 @@ Section 1 */
     max-width: 78%; 
     height: auto;
 }
-
 /* section 4  ends */
 
 /* section 5  */
-
 #feature-section {
     display: flex;
     align-items: center;
@@ -577,7 +575,6 @@ Section 1 */
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
-    /* margin: -27px 0; */
 }
 .h h2{
     font-size: 60px;
@@ -618,8 +615,6 @@ Section 1 */
     display: flex;
     justify-content: space-between;
     height: 250px;
-    
-    /* margin-bottom: 20px; */
 }
 
 .side-news-item {
@@ -647,18 +642,6 @@ Section 1 */
     font-weight: bold;
 
 }
- /* .highlighted-wrapper {
-    margin-top: 20px;
-}
-
-.side-news-item.highlighted {
-    padding: 10px;
-    background-color: yellow;
-    font-weight: bold;
-    text-align: left;
-    width: 30%; 
-    
-} */
 
 /* Section 08 css  */
 .section-8 {
@@ -688,7 +671,6 @@ Section 1 */
     text-align: center;
     margin-bottom: 5px;
     background-color: yellow;
-    /* display: inline-block; */
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -998,9 +980,7 @@ Section 1 */
     flex: 1;
     margin: 10px;
     margin-left: 0px;
-    margin-right: 0px;
-   
-    
+    margin-right: 0px;   
 }
 
 .sec13-news .se13-news2 {
@@ -1047,7 +1027,6 @@ Section 1 */
     flex: 1;
 }
 .sec13-news .line{
-    /* flex: 1 1 100%; */
     margin: 10px;
     background-color: yellow;
     padding: 15px;
@@ -1064,16 +1043,13 @@ Section 1 */
 
 /* section-15  */
 #section-15 {
-    background-color: #00AEEF; /* Blue background color */
+    background-color: #00AEEF; 
     padding: 20px;
 }
 
 .sec15-container {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    /* max-width: 1200px;
-    margin: 0 auto; */
     max-width: 1111px;
     margin: 76px auto;
     background-color: white;
